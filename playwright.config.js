@@ -36,19 +36,27 @@ export default defineConfig({
   /* Configure projects for major browsers */
   projects: [
     {
-      name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
+      name: 'API',
+      use: {
+        baseURL: 'https://reqres.in',
+      },
+      testMatch: 'tests/api/**/*.spec.js', // hanya file di folder 'api'
     },
-
     {
-      name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
+      name: 'UI - Chromium',
+      use: { browserName: 'chromium' },
+      testMatch: 'tests/ui/**/*.spec.js', // hanya file di folder 'ui'
     },
-
     {
-      name: 'webkit',
-      use: { ...devices['Desktop Safari'] },
+      name: 'UI - Firefox',
+      use: { browserName: 'firefox' },
+      testMatch: 'tests/ui/**/*.spec.js',
     },
+    {
+      name: 'UI - WebKit',
+      use: { browserName: 'webkit' },
+      testMatch: 'tests/ui/**/*.spec.js',
+    }
 
     /* Test against mobile viewports. */
     // {
