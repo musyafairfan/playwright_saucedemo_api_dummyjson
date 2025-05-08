@@ -5,7 +5,7 @@ const firstname = faker.person.firstName();
 const lastname = faker.person.lastName();
 const age = faker.number.int({ min: 1, max: 100 });
 
-test('GET All users', async ({ request }) => {
+test('GET all users', async ({ request }) => {
   const response = await request.get('https://dummyjson.com/users');
   expect(response.status('OK')).toBe(200); // status 200
   const data = await response.json();
@@ -13,7 +13,7 @@ test('GET All users', async ({ request }) => {
   expect(data.users.length).toBeGreaterThan(0); // ada user
 });
 
-test('GET Single user', async ({ request }) => {
+test('GET single user', async ({ request }) => {
   const id = 2;
   const response = await request.get(`https://dummyjson.com/users/${id}`);
   expect(response.status('OK')).toBe(200); // status 200
