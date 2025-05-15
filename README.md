@@ -89,12 +89,11 @@ npx playwright show-report
 
 ---
 
-👤 Author
-Nama: @Irfan
-Posisi: QA Engineer in Progress 🔧🚀
-Pengalaman: Manual QA - 2 Tahun
+## 👤 Author
+**Nama:** @Irfan
+**Posisi:** QA Engineer in Progress 🔧🚀
+**Pengalaman:** Manual QA - 2 Tahun
 
-🏁 Penutup
+## 🏁 Penutup
 “Automation testing bukan sekadar script, tapi jembatan menuju kualitas aplikasi yang lebih baik.”
-
 Selamat menguji, semoga bug selalu bisa ditemukan sebelum user menemukannya! 🐞✨
