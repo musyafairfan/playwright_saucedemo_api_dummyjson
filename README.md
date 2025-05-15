@@ -35,7 +35,7 @@ If you don't have it... no worries, download it from [here](https://nodejs.org/)
 1. Clone the repo:
 
 ```bash
-git clone https://github.com/faizawa/playwright_js_boilerplate.git
+git clone https://github.com/musyafairfan/playwright_saucedemo_api_dummyjson.git
 ```
 
 2. Install dependencies:
